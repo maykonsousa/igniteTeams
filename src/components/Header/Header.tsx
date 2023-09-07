@@ -1,10 +1,20 @@
 import React from 'react'
-import {  HeaderContainer, Logo } from './Header.styles'
+import {  BackButton, BackIcon, HeaderContainer, Logo } from './Header.styles'
 import LogoImage from '@assets/logo.png'
 
-export const Header = () => {
+interface IHeaderProps {
+  showBackButton?: boolean
+}
+
+export const Header = ({showBackButton=false}:IHeaderProps) => {
   return (
     <HeaderContainer>
+       
+          {showBackButton ?(
+            <BackButton>
+            <BackIcon />
+          </BackButton>
+          ):null}
         
         <Logo source={LogoImage} />
     </HeaderContainer>

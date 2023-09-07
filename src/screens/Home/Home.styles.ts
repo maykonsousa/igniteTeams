@@ -5,12 +5,10 @@ export const HomeContainer = styled.View`
     align-items: center;
     background-color: ${({theme}) =>theme.colors.gray_600};
     padding-top: 40px;
+    gap: 32px;
+    
 
    
     `;
 
-    export const Title = styled.Text`
-    font-size: 24px;
-    font-weight: bold;
-    color: #fff;
-    `;
+   
