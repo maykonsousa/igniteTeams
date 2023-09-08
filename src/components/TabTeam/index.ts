@@ -1,0 +1,1 @@
+export {TabTeam} from './TabTeam';
