@@ -16,4 +16,6 @@ export const InputContainer = styled(TextInput).attrs(({theme})=>({
     padding: 0 16px;
     font-family: ${({theme}) => theme.fonts.regular};
     color: ${({theme}) => theme.colors.white};
+    width: 100%;
+    margin-bottom: 8px;
 `;

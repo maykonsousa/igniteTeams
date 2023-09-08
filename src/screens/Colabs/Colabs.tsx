@@ -1,13 +1,16 @@
-import {FlatList} from 'react-native';
 import React, {useState} from 'react';
-import { ColabsContainer, CounterPlayers, FormContainer, TabContainer } from './Colabs.styles'
+import {FlatList} from 'react-native';
+import uuid from 'react-native-uuid';
 import { Header } from '@components/Header'
 import { PageTitle } from '@components/PageTitle'
 import { Input } from '@components/Input'
 import { HandleIcon } from '@components/HandleIcon'
 import { TabTeam } from '@components/TabTeam'
-import uuid from 'react-native-uuid';
 import { PlayerCard } from '@components/PlayerCard';
+import { Button } from '@components/Button'
+
+import { ColabsContainer, CounterPlayers, FormContainer, TabContainer } from './Colabs.styles'
+
 
 export interface IPlayer {
   name: string
@@ -99,6 +102,7 @@ export const Colabs = () => {
       }
       showsVerticalScrollIndicator={false}
      />
+     <Button label='Remover Turma' type='secondary' onPress={() => {}} />
 
      
     </ColabsContainer>

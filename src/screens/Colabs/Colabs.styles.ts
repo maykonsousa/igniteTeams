@@ -1,10 +1,10 @@
 import styled, {css} from "styled-components/native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
-export const ColabsContainer = styled.View`
+export const ColabsContainer = styled(SafeAreaView)`
     flex: 1;
     background-color: ${({theme}) =>theme.colors.gray_600};
-    padding: 16px 24px;
-    padding-top: 40px;
+    padding: 0  24px 16px;
 `;
 
 export const FormContainer = styled.View`
