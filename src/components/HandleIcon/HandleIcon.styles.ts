@@ -10,7 +10,10 @@ export const HandleIconContainer = styled(TouchableOpacity)`
     height: 56px;
     justify-content: center;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 5px;
+    background-color: ${({theme}) => theme.colors.gray_700};
+    border-radius: 6px;
+
 `;
 
 export const AddIcon = styled(Plus).attrs(({theme})=>({
