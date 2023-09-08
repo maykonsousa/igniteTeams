@@ -1,4 +1,4 @@
-import { PencilSimple, Plus } from "phosphor-react-native";
+import { PencilSimple, Plus, X } from "phosphor-react-native";
 import { TouchableOpacity } from "react-native"
 import styled from "styled-components/native"
 
@@ -11,7 +11,6 @@ export const HandleIconContainer = styled(TouchableOpacity)`
     justify-content: center;
     align-items: center;
     margin-left: 5px;
-    background-color: ${({theme}) => theme.colors.gray_700};
     border-radius: 6px;
 
 `;
@@ -26,7 +25,7 @@ export const EditIcon = styled(PencilSimple).attrs(({theme})=>({
     color: theme.colors.gray_300,
 }))``;
 
-export const DeleteIcon = styled(PencilSimple).attrs(({theme})=>({
+export const DeleteIcon = styled(X).attrs(({theme})=>({
     size: 32,
     color: theme.colors.red_dark,
 }))``;
