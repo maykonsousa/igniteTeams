@@ -7,14 +7,13 @@ export const InputContainer = styled(TextInput).attrs(({theme})=>({
     selectionColor: theme.colors.white,
     underlineColorAndroid: 'transparent',
 }))`
-    width: 100%;
+    flex: 1;
     max-height: 56px;
     min-height: 56px;
     background-color: ${({theme}) => theme.colors.gray_700};
     border-radius: 6px;
-    font-size: ${({theme}) => theme.font_size.md};
+    font-size: ${({theme}) => theme.font_size.md}px;
     padding: 0 16px;
     font-family: ${({theme}) => theme.fonts.regular};
     color: ${({theme}) => theme.colors.white};
-    margin-bottom: 10px;
 `;
